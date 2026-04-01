@@ -1,0 +1,206 @@
+/* Configurações universais no CSS: */
+*{
+    /* Todos os elementos sem margem e sem espaçamento */
+    margin: 0;
+    padding: 0;
+}
+/* Estilos gerais */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* Altura entre as linhas */
+    line-height: 1.6;
+    background-color: #222222;
+    color: #333;
+}
+/* Estilo do CABEÇALO */
+header{
+   
+    background-color: #0D0D0D;
+    padding: 30px 20px;
+    display: flex;
+    
+}
+header img{
+    height: 80px;
+}
+
+/* menu de navegação */
+nav{
+    background-color: #1F1F1F;
+    padding: 10px;    
+}
+nav ul{
+    text-align: center;
+}
+nav ul li{
+    /* Deixa em posicao horizontal */
+    display: inline;
+    /* o zero é pra margem vertical enquanto o 15 e pra margem vertical */
+    /* mas como esta organizado em uma linha o zero nao faz diferença nesse caso */
+    margin: 0 15px;
+}
+nav ul li a{
+   color: white;
+   /* remove as decorações do texto, nesse caso o sblinhado */
+   text-decoration: none;
+    /* negritar o texto */
+   font-weight: bold;
+}
+/* quando o ususario trouxer o mouse em cima do elemento */
+nav ul li a:hover{
+    text-decoration: underline;
+    color: #d42929;
+} 
+/* linhas horizontais */
+hr{
+    height: 1px;
+    background-color: #2e2e2e;
+    margin: 30px 0;
+    border: none;
+}
+/* conteudo principal */
+main{
+    padding: 20px;
+}
+/* secoes(section) */
+section h2{
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #1e88e5;    
+}
+ /* artigos(article) */
+ article{
+    background-color: rgb(70, 66, 66);
+    /* arredondar as bordas */
+    border-radius: 6px;
+    /* espaçamento interno */
+    padding: 15px;
+    /* margem inferior, pra dar espaco entre os elementos */
+    margin-bottom: 15px;
+    /* criar borda no canto esquerdo, solid é o tipo da borda */
+    border-left: 5px solid #df242d;
+ }
+
+ article h3{
+    color: #cac8c8;
+    margin-bottom: 8px;
+ }
+ article p{
+    color: #c9c6c6;
+ }
+
+ /* anuncio */
+ aside{
+    background-color: #fff3e0;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ffd180;
+    border-left:5px solid #ffd180 ;
+    align-items:center;
+    padding: 15px;
+    width: 45%;
+    margin: auto;
+ }
+
+ /* rodapé(footer) */
+ footer{
+    background-color: #ff2c2c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+ }
+ .container {
+    display: flex;
+    gap: 20px; 
+}
+.noticia1 {
+    background-color: #141414;
+    padding: 15px;
+    width: 30%;
+}
+.noticia2 {
+    background-color: #141414;
+    padding: 15px;
+    width: 30%;
+}
+.noticia3 {
+    background-color: #141414;
+    padding: 15px;
+    width: 30%;
+}
+.noticia4 {
+    background-color: #141414;
+    padding: 15px;
+    width: 30%;
+}
+.noticia5 {
+    background-color: #141414;
+    padding: 15px;
+    width: 30%;
+}
+.noticia6 {
+    background-color: #141414;
+    padding: 15px;
+    width: 30%;
+}
+.noticia1:hover{
+    
+    text-decoration: underline;
+    color: #a09e9e;
+    width: 35%;
+} 
+.noticia2:hover{
+    
+    text-decoration: underline;
+    color: #a09e9e;
+    width: 35%;
+} 
+.noticia3:hover{
+    
+    text-decoration: underline;
+    color: #a09e9e;
+    width: 35%;
+} 
+.noticia5:hover{
+    
+    text-decoration: underline;
+    color: #a09e9e;
+    width: 35%;
+} 
+.noticia4:hover{
+    
+    text-decoration: underline;
+    color: #a09e9e;
+    width: 35%;
+} 
+.noticia6:hover{
+    
+    text-decoration: underline;
+    color: #a09e9e;
+    width:35%;
+} 
+aside img{
+    height: 300px;
+    padding-left: 90px;
+}
+.noticia1 img{
+    width: 100%;
+
+}
+.noticia2 img{
+    width: 100%;
+
+}
+.noticia3 img{
+    width: 100%;
+}
+.noticia4 img{
+    width: 100%;
+}
+.noticia5 img{
+    width: 100%;
+}
+.noticia6 img{
+    width: 100%;
+}

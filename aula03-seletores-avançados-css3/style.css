@@ -1,0 +1,20 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #30302e;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+}
+/* este é um seletor de id */
+#texto{
+color: aquamarine;
+}
+/* este é um seletor de classe */
+.destaque{
+background-color: cornflowerblue;
+color: black;
+padding: 10px;
+margin-bottom: 10px;
+border-left: 5px solid #ffffff;
+font-weight: bold;
+}
