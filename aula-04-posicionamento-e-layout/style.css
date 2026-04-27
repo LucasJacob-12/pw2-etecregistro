@@ -1,0 +1,49 @@
+.caixa{
+   width: 150px;
+   height: 150px;
+   margin: 20px;
+   background-color: #ccc; 
+}
+.static{
+    position: static;
+    background-color: #8cc9e4;
+}
+.relative{
+    position: relative;
+    background-color: #4caf50;
+    top: 50px;
+    left: 200px;
+}
+.absolute{
+    position: absolute;
+    background-color: #ff6347;
+    margin: 0;
+    top: 150px;
+    /* posso atribuir valores negativos aos pixels
+  */
+  z-index: 3;
+}
+.frente{
+    z-index: 2;
+    left: 60px;
+    background-color: cadetblue;
+    top: 170px;
+}
+.fixed{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    background-color: #cf4871;
+}
+.espaco{
+    height: 900px;
+    background-color: lightcyan;
+}
+.stick{
+    position: sticky;
+    top: 0;
+    height: 100px;
+    width: 80%;
+    background-color: cornflowerblue;
+}
