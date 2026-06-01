@@ -1,0 +1,211 @@
+/* Configurações Globais */
+*{
+    margin: 0;
+    padding: 0;
+    /* Desconsidera a margin como tamanho do elemento, ele começa a partir da borda */
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+.container{
+    max-width: 1200px;
+    /* O primeiro digito é para margin vretical do elemento q esta a 0px, enquanto o segundo é para margin horizontal*/
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header{
+    background-color: #2c1810;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    /* Aonde que meu sticky vai grudar, no caso a 0px do topo */
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    /* Aumenta os espaço entre os itens da nav box */
+    gap: 2rem;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    /* Tem como manipular coisas como o tempo da transição de transição dos meus pseu do classes(nesse caso o hover) */
+    transition: color 0.5s;
+}
+.menu a:hover{
+    color:#d4a574;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* Hero section */
+.hero{
+    /* Oquarto campo é sempre o da opacidade */
+    background: linear-gradient(rgba(44,24,26,0.7), rgba(44,24,26,0.3)), url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&h=600&fit=crop");
+    height: 500px;
+    /* Para a img ocupar toda a area disponivel */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-content h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero-content p{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.btn-primary{
+    background-color: #d4a574;
+    color: white;
+    padding:1rem 2rem;
+    border:none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    /* para fazer o cursor virar mazinha quando chega no botao */
+    cursor: pointer;
+    transition: scale 0.5s;
+}
+.btn-primary:hover{
+    background-color: #b8935f;
+    scale:1.1;
+}
+/* seção de produtos */
+.produtos{
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+.section-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c1810;
+}
+.cards{
+    display: flex;
+    /* coloquei display;flex eles ficam lado a lado */
+    gap:2rem;
+    /* espaçamento dentro da flex-box */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* para ter uma quebra de linha responsiva, ou seja, se adaptar ao tamanho da tela */
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    flex: 1;
+    /* o flex:1 faz com q os elementos aumentem ou diminuam de acordo com o espaço disponivel */
+    min-width: 280px;
+    max-width: 350px;
+    transition: transform 0.3s;
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* faz a imagem cobrir td o espaço disponivel */
+}
+.card-content{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.card-content h3{
+    color: #2c1810;
+    font-size: 1.5rem;
+}
+.card-content p{
+    color: #666666;
+    flex: 1;
+}
+.price{
+    font-size: 1.5rem;
+    color: #d4a574;
+    font-weight: bold;
+}
+/* SEção sobre a empresa */
+.sobre{
+    padding: 4rem 0;
+}
+.sobre-flex{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.sobre-imagem{
+    flex: 1;
+}
+.sobre-imagem img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+.sobre-texto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sobre-texto h2{
+    font-size: 2.5rem;
+    color: #2c1810;
+}
+.sobre-texto p{
+    color: #666666;
+    font-size: 1.1rem;
+}
+.beneficios{
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer{
+    background-color: #2c1810;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+.footer-section{
+    flex: 1;
+    min-width: 200px;
+}
+.footer-section h4{
+    margin-bottom: 1rem;
+    color: #d4a574;
+}
+.footer-bottom{
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #4a3226;
+}

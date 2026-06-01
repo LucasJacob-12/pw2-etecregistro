@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    height: 250px;
+    padding: 20px;
+    background-color: #30302e;
+}
+.card{
+    background-color: #8cc9e4;
+    padding: 20px;
+    margin: 5px;
+    color: #30302e;
+    font-weight: bold;
+}
+.linha-ao-centro{
+    flex-direction: row;
+    /* eixo horizontal */
+    justify-content: center;
+    /* eixo vertical */
+    align-items: center;
+}
+.coluna-a-esquerda{
+    flex-direction: column;
+    /* eixo vertical */ 
+    justify-content: center;
+    /* eixo horizontal */   
+    align-items: flex-start;
+}
+.linha-espacada{
+    flex-direction: row;
+    /* espaça os itens fazendo com que eles ocupem todo oespaço disponivel */
+    justify-content: space-between;
+    align-items: center;
+}
+.quebra-linha{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* quebra de linha */
+    flex-wrap: wrap;
+}
+.card-grande{
+    width: 100px;
+}
