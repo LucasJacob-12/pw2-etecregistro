@@ -46,8 +46,19 @@
     // prompt-> abre uma janela de insersaçõa de dados
     const nome= window.prompt('Qual é seu nome?')
     let idade= window.prompt('Qual é sua idade?')
-    document.write('Olá ' +nome+'! Vamos aprender sobre Variaveis! <br>')
-    document.write('Você possui ' +idade+ ' anos')
+    //  document.write('Olá ' +nome+'! Vamos aprender sobre Variaveis! <br>') //-> concatenação comum
+     document.write(`Olá ${nome}! Vamos aprender sobre variaveis <br>`)//->concatenação template string
+
+    //  document.write('Você possui ' +idade+ ' anos <br>')
+     document.write(`Você possui ${idade} anos!<br>`)
+
+
+
+    //  CONVERSAO DE DADOS 
+    const n1=Number( window.prompt('Digite um número'))
+    const n2=Number( window.prompt('Digite outro número'))
+    const resultado= n1 + n2
+    document.write(`A soma de ${n1} + ${n2} é igual a: ${resultado} <br>`) 
 
  </script>
 </html>
