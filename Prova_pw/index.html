@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Digital para Diagnóstico de Servidores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Painel de Diagnóstico de Servidor</h1>
+    <div id="principal">   
+    <div id="container">
+
+
+            <h6 class="titulo">CPU(%)</h6>
+
+            <input type="number" name="inputN1" id="inputN1" min="0" max="100">
+
+            <button type="button" class="botao" onclick="analiseCpu()" id="cpu1">Verificar uso de CPU</button>
+
+            <h6 class="titulo">Memória(%)</h6>
+
+            <input type="number" name="inputN2" id="inputN2" min="0" max="100">
+
+            <button type="button" class="botao" id="memoria1" onclick="analiseMemoria()">Verificar uso de Memória</button>
+
+            <h6 class="titulo">Temperatura(°C)</h6>
+
+            <input type="number" name="inputN3" id="inputN3" min="0" max="999">
+
+            <button type="button" class="botao" id="teperatura1" onclick="analiseTemperatura()">Verificar uso de CPU</button>
+
+        </div>
+</div>
+<div id="resposta">
+        <div id="cpu"></div>
+        <div id="memoria"></div>
+        <div id="temperatura"></div>
+</div>
+        <button type="button" id="reseta" onclick="limpar()">Reiniciar Servidor</button>
+
+   <script src="script.js"></script> 
+</body>
+</html>

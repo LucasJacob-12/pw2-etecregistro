@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manipulação de Formulários com JavaScript</title>
+</head>
+<body>
+    <h1>Calculadora com JavaScript</h1>
+    <div id="container">
+        <h4>Digite seus números</h4>
+        <input type="number" name="inputN1" id="inputN1" min="0" max="999">
+        <input type="number" name="inputN2" id="inputN2" min="0" max="999">
+
+        <br><br>
+
+        <div id="operacoes">
+        <button type="button" onclick="somar()" class="button">+</button>
+        <button type="button" onclick="subtrair()" class="button">-</button>
+        <button type="button" onclick="multiplicar()" class="button">*</button>
+        <button type="button" onclick="dividir()" class="button">/</button>
+        </div>
+
+        <button type="button" onclick="limpar()" id="button">Limpar</button>
+        <div id="resultado"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
